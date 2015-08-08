@@ -1,0 +1,26 @@
+{
+  "name": "midori-frontend-template",
+  "version": "0.1.0",
+  "authors": [
+    "Midori Koçak <mtkocak@gmail.com>"
+  ],
+  "description": "Front End Template I use in my projects, based on foundation",
+  "keywords": [
+    "template",
+    "frontend",
+    "midori",
+    "mtkocak"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.mtkocak.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "frontend-template",
+  "version": "0.1.0",
+  "description": "Front End Template I use in my projects, based on foundation",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mtkocak/template-frontend.git"
+  },
+  "keywords": [
+    "frontend",
+    "template",
+    "midori",
+    "mtkocak"
+  ],
+  "author": "Midori Kocak <mtkocak@mtkocak.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtkocak/template-frontend/issues"
+  },
+  "homepage": "https://github.com/mtkocak/template-frontend",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-html-build": "^0.5.0",
+    "grunt-phpunit": "^0.3.6",
+    "grunt-replace": "^0.9.2",
+    "grunt-wiredep": "^2.0.0"
+  }
+}

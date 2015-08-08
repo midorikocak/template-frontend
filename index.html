@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/jquery-mobile-bower/css/jquery.mobile-1.4.5.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- build:script libs -->
+    <title>
+        <%=p kg.name %>
+    </title>
+    <!-- /build -->
+</head>
+
+<body>
+    <div data-role="page" data-control-title="Login" id="login">
+        <!--div data-role="header">
+                  <h1>Streetparty</h1>
+              </div -->
+        <!-- /header -->
+        <div data-role="content">
+            <form action="" method="POST">
+                <div style=" text-align:center" data-controltype="image" class="logo">
+                    <img style="width: 100%; height: autopx" src="https://s3.amazonaws.com/assets.codiqa.com/oKKL7LwSpR1OaNgzWcgH_streetparty.png">
+                </div>
+                <div data-role="fieldcontain" data-controltype="textinput" class="email">
+                    <input name="email" id="email" placeholder="Email" value="" type="email">
+                </div>
+                <div data-role="fieldcontain" data-controltype="textinput" class="password">
+                    <input name="password" id="textinput10" placeholder="Password" value="" type="password">
+                </div>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#page6" data-transition="fade" data-theme="" data-icon="check">
+                               Register
+                           </a>
+                    </li>
+                    <li>
+                        <a href="#page5" data-transition="fade" data-theme="" data-icon="arrow-r">
+                               About
+                           </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /footer -->
+    </div>

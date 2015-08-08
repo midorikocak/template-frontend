@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Streetparty</title>
+</head>
+
+<body>
+    <!-- Start of first page -->
+    <div data-role="page" id="hesap">
+
+        <div data-role="header">
+            <h1>Simyaci Basic</h1>
+        </div>
+        <!-- /header -->
+
+        <div data-role="content">
+            <p>Metalin özgül ağırlığına göre diğer metallere çevirerek ağırlığını, firesini ve has fiyatını bulan program.</p>
+            <form action="altin.html">
+                <div data-role="fieldcontain">
+                    <label for="kaynakMetal">Kaynak Metal türü:</label>
+                    <select name="kaynakMetal" id="kaynakMetal">
+                        <option value="1">Altın</option>
+                        <option value="2">Gümüş</option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="kaynakAyar">Kaynak Ayar:</label>
+                    <select name="kaynakAyar" id="kaynakAyar">
+                        <option value="330">8</option>
+                        <option value="585">14</option>
+                        <option value="750">18</option>
+                        <option value="916">22</option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="kaynakRenk">Kaynak Renk:</label>
+                    <select name="kaynakRenk" id="kaynakRenk">
+                        <option value="Kırmızı">Kırmızı</option>
+                        <option value="Yeşil">Yeşil</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Beyaz">Beyaz</option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="kaynakAgirlik">Kaynak Ağırlık:</label>
+                    <input type="number" id="kaynakAgirlik" min="0" name="kaynakAgirlik" value="0" />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="hedefMetal">Hedef Metal türü:</label>
+                    <select name="hedefMetal" id="hedefMetal">
+                        <option value="1">Altın</option>
+                        <option value="2">Gümüş</option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="hedefAyar">Hedef Ayar:</label>
+                    <select name="hedefAyar" id="hedefAyar">
+                        <option value="330">8</option>
+                        <option value="585">14</option>
+                        <option value="750">18</option>
+                        <option value="916">22</option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="hedefRenk">Hedef Renk:</label>
+                    <select name="hedefRenk" id="hedefRenk">
+                        <option value="Kırmızı">Kırmızı</option>
+                        <option value="Yeşil">Yeşil</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Beyaz">Beyaz</option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="fire">Fire Oranı:</label>
+                    <input type="number" id="fire" name="fire" min="0" max="100" value="0" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="fiyat">Hedef Metal Fiyatı:</label>
+                    <input type="number" id="fiyat" name="fiyat" min="0" value="0" />
+                </div>
+                <p><a id="osman" href="#sonuc">Sonuç</a></p>
+            </form>
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="gear">Hakkında</a></li>
+                </ul>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page -->
+    <!-- Start of second page -->
+    <div data-role="page" id="sonuc">
+
+        <div data-role="header">
+            <h1>Sonuç</h1>
+        </div>
+        <!-- /header -->
+
+        <div data-role="content">
+            <h3>Sonuç Fiyat</h3>
+            <p id="sonucFiyat"></p>
+            <h3>Sonuç Ağırlık</h3>
+            <p id="sonucAgirlik"></p>
+            <p><a id="ali" href="#hesap">Geri dön</a></p>
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#about" data-icon="gear">Hakkında</a></li>
+                </ul>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <div data-role="page" id="about">
+
+        <div data-role="header">
+            <h1>Program Hakkında</h1>
+        </div>
+        <!-- /header -->
+
+        <div data-role="content">
+            <h3>Programla ilgili bilgiler:</h3>
+            <p>Metalin özgül ağırlığına göre diğer metallere çevirerek ağırlığını, firesini ve has fiyatını bulan program. Daha fazla bilgi için: http://www.mtkocak.com</p>
+            <p>Mtkocak@2013</p>
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#about" data-icon="gear">Hakkında</a></li>
+                </ul>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="../bower_components/foundation/js/foundation.js"></script>
+    <!-- endbower -->
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

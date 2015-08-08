@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Streetparty</title>
+</head>
+
+<body>
+    <div data-role="page" data-control-title="Profile" id="page8">
+        <div data-role="header">
+            <h3>
+            Profile
+        </h3>
+        </div>
+        <div data-role="content">
+            <div style="" data-controltype="image">
+                <img style="width: 100%; height: autopx" src="img/profile.jpg">
+            </div>
+            <div data-controltype="textblock">
+                <p style="text-align: center;">
+                    <span style="color: rgb(136, 136, 136);">
+                    <b>
+                        Midori Kocak
+                    </b>
+                </span>
+                </p>
+            </div>
+            <form action="">
+                <div data-role="fieldcontain" data-controltype="textinput">
+                    <input name="" id="textinput8" placeholder="Email" value="" type="text">
+                </div>
+                <div data-role="fieldcontain" data-controltype="textinput">
+                    <input name="" id="textinput11" placeholder="Password" value="" type="text">
+                </div>
+                <div data-role="fieldcontain" data-controltype="textinput">
+                    <input name="" id="textinput12" placeholder="Password Again" value="" type="text">
+                </div>
+                <div data-role="fieldcontain" data-controltype="camerainput">
+                    <label for="camerainput1">
+                        Profile Picture
+                    </label>
+                    <input type="file" name="" id="camerainput1" accept="image/*" capture="camera">
+                </div>
+                <input type="submit" value="Edit My Profile!">
+            </form>
+        </div>
+    </div>
+    <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="../bower_components/foundation/js/foundation.js"></script>
+    <!-- endbower -->
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
